@@ -6,6 +6,10 @@ set showmode
 set incsearch
 set scrolloff=8
 
+""" use system clipboard
+set clipboard+=unnamed
+set clipboard+=ideaput
+
 """ Idea specific settings ------
 set ideajoin
 set idearefactormode=keep
@@ -19,10 +23,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Intellij actions
-nnoremap <leader>i :action Generate<CR>
-nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>g :action Generate<CR>
+nnoremap <leader>a :action Refactorings.QuickListPopupAction<CR>
 
-nnoremap <leader>e :action ShowErrorDescription<CR>
+nnoremap <leader>fs :action FileStructurePopup<CR>
+
+nnoremap <leader>ed :action ShowErrorDescription<CR>
 nnoremap <leader>en :action GotoNextError<CR>
 nnoremap <leader>ep :action GotoPreviousError<CR>
 
@@ -30,8 +36,10 @@ nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
 
 nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+nnoremap <c-q> :action HideActiveWindow<CR>
+nnoremap <leader>h :action QuickJavaDoc<CR>
 
-" Code Navigation
+" Searching & Code Navigation
 nnoremap gc :action GotoClass<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
@@ -40,6 +48,8 @@ nnoremap gt :action GotoTest<CR>
 nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
 
+nnoremap <c-r> :action RecentFiles<CR>
+nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>ff :action FindInPath<CR>
 nnoremap <leader>fu :action FindUsages<CR>
 
@@ -57,6 +67,7 @@ nnoremap <s-Tab> :action NextTab<CR>
 nnoremap <leader>cw :action CloseContent<CR>
 nnoremap <leader>sv :action SplitVertically<CR>
 nnoremap <leader>sh :action SplitHorizontally<CR>
+nnoremap <leader>us :action Unsplit<CR>
 
 " system clipboard
 vmap <leader>y "+y
@@ -67,5 +78,7 @@ nmap <leader>P "+P
 vmap <leader>p "+p
 vmap <leader>P "+P
 
-" NERDTree
+
+" NerdTree commands
 nnoremap <leader>n :NERDTree<CR>
+" using 'm' we can do operations on files in the tree pane
