@@ -51,7 +51,7 @@ nnoremap <leader>oi <Action>(OptimizeImports)
 
 nnoremap <c-z> <Action>(ToggleDistractionFreeMode)
 
-nnoremap <c-t> <Action>(ActivateTerminalToolWindow)
+nnoremap <c-\> <Action>(ActivateTerminalToolWindow)
 nnoremap <leader>t <Action>(Terminal.OpenInTerminal)
 nnoremap <c-q> <Action>(HideActiveWindow)
 
