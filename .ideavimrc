@@ -39,7 +39,7 @@ set matchpairs+=<:>
 
 " Code actions
 nnoremap <leader>cg :action Generate<CR>
-nnoremap <leader>ca:action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>ca :action Refactorings.QuickListPopupAction<CR>
 
 nnoremap <leader>ed :action ShowErrorDescription<CR>
 nnoremap <leader>en :action GotoNextError<CR>
