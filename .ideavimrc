@@ -38,42 +38,42 @@ vnoremap > >gv
 set matchpairs+=<:>
 
 " Code actions
-nnoremap <leader>cg <Action>(Generate)
-nnoremap <leader>ca <Action>(Refactorings.QuickListPopupAction)
+nnoremap <leader>cg :action Generate<CR>
+nnoremap <leader>ca:action Refactorings.QuickListPopupAction<CR>
 
-nnoremap <leader>ed <Action>(ShowErrorDescription)
-nnoremap <leader>en <Action>(GotoNextError)
-nnoremap <leader>ep <Action>(GotoPreviousError)
+nnoremap <leader>ed :action ShowErrorDescription<CR>
+nnoremap <leader>en :action GotoNextError<CR>
+nnoremap <leader>ep :action GotoPreviousError<CR>
 
-nnoremap <leader><leader> <Action>(ReformatCode)
-nnoremap <leader>oi <Action>(OptimizeImports)
+nnoremap <leader><leader> :action ReformatCode<CR>
+nnoremap <leader>oi :action OptimizeImports<CR>
 
 
-nnoremap <c-z> <Action>(ToggleDistractionFreeMode)
+nnoremap <c-z>:action ToggleDistractionFreeMode<CR>
 
-nnoremap <c-\> <Action>(ActivateTerminalToolWindow)
-nnoremap <leader>t <Action>(Terminal.OpenInTerminal)
-nnoremap <c-q> <Action>(HideActiveWindow)
+nnoremap <c-\> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+nnoremap <c-q> :action HideActiveWindow<CR>
 
 
 " Searching & Code Navigation
-nnoremap gi <Action>(GotoImplementation)
-nnoremap gd <Action>(GotoDeclaration)
-nnoremap gs <Action>(GotoSuperMethod)
-nnoremap gt <Action>(GotoTest)
-nnoremap gb <Action>(Back)
-nnoremap gf <Action>(Forward)
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
 
-nnoremap <leader>fr <Action>(RecentFiles)
-nnoremap <leader>fc <Action>(GotoClass)
-nnoremap <leader>ff <Action>(GotoFile)
-nnoremap <leader>fs <Action>(GotoSymbol)
-nnoremap <leader>fa <Action>(GotoAction)
-nnoremap <leader>fg <Action>(FindInPath)
-nnoremap <leader>fu <Action>(ShowUsages)
+nnoremap <leader>fr :action RecentFiles<CR>
+nnoremap <leader>fc :action GotoClass<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>fg :action FindInPath<CR>
+nnoremap <leader>fu :action ShowUsages<CR>
 
-nnoremap K <Action>(ShowHoverInfo)
-nnoremap <leader>h <Action>(QuickJavaDoc)
+nnoremap K :action ShowHoverInfo<CR>
+nnoremap <leader>h :action QuickJavaDoc<CR>
 
 " Window/Tab navigation
 sethandler <c-j> a:vim
@@ -83,13 +83,13 @@ nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
-nnoremap <Tab> <Action>(PreviousTab)
-nnoremap <s-Tab> <Action>(NextTab)
+nnoremap <Tab> :action PreviousTab<CR>
+nnoremap <s-Tab> :action NextTab<CR>
 
-nnoremap <leader>sv <Action>(SplitVertically)
-nnoremap <leader>sh <Action>(SplitHorizontally)
-nnoremap <leader>su <Action>(Unsplit)
-nnoremap <leader>sa <Action>(UnsplitAll)
+nnoremap <leader>sv :action SplitVertically<CR>
+nnoremap <leader>sh :action SplitHorizontally<CR>
+nnoremap <leader>su :action Unsplit<CR>
+nnoremap <leader>sa :action UnsplitAll<CR>
 
 " system clipboard
 vmap <leader>y "+y
